@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+body {
+  background: white;
+  color: #0060df;
+  width: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #0060df;
+  color: white;
+  padding: 10px;
+}
+header .header-inner {
+  font-size: 80%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-inner a {
+  color: white;
+  text-decoration: none;
+}
+header .header-inner a.nav-link {
+  background: white;
+  color: #0060df;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.calculator {
+  width: 40%;
+  margin: 5em auto 0;
+}
+.calculator table {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  border: 1px solid #1379ff;
+  box-shadow: 0 0 0.3em 0.01em #999;
+}
+.calculator table thead th {
+  font-size: 1.3em;
+  padding: 0.9em;
+}
+.calculator table tbody {
+  padding-top: 1em;
+}
+.calculator table tbody td input {
+  width: 100%;
+  padding: 0.9em;
+  text-align: right;
+}
+.calculator table tbody td input:read-only {
+  outline: 0;
+}
+.calculator table tbody td input#processed-data {
+  border: 1px solid #0060df;
+  border-bottom: 0;
+  border-top-right-radius: 0.2em;
+  border-top-left-radius: 0.2em;
+  font-weight: 900;
+}
+.calculator table tbody td input#unprocessed-data {
+  border: 1px solid #0060df;
+  border-top: 0;
+  border-bottom-right-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+  margin-top: -3px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+.calculator table tbody td button {
+  width: 100%;
+  height: 3em;
+  font-weight: 600;
+  font-size: 1em;
+  border: 1px solid #0060df;
+  border-radius: 0.2em;
+  background: white;
+}
+.calculator table tbody td button:hover {
+  background: #0060df;
+  color: white;
+}
+.calculator table tbody td button .operators {
+  font-weight: 800;
+}
+.calculator table tbody td button#btn-equals {
+  height: 6.1em;
+  background: #0060df;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

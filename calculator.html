@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="chigbogu">
+    <title>Digital calculator</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./calculator.js" defer></script>
+  </head>
+
+  <body>
+    <div id="wrapper-1">
+      <header>
+        <div class="header-inner">
+          <h2>
+            <a href="./calculator.html">Digital calculator</a>
+          </h2>
+          <nav>
+            <a href="https://github.com/ChigboguOrji/digital-calculator.git" target="_blank" rel="noreferrer noopener" class="nav-link">fork project on github</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="calculator">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="4">Digital Calculator</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="4"><input type="text" id="processed-data" readonly aria-readonly="true"></td>
+              </tr>
+
+              <tr>
+                <td colspan="4"><input type="text" id="unprocessed-data" readonly aria-readonly="true"></td>
+              </tr>
+
+              <tr>
+                <td><button id="clear-entry" class="operators">CE</button></td>
+                <td><button id="clear" class="operators">C</button></td>
+                <td colspan="2"><button id="btn-divide" class="operators">/</button></td>
+              </tr>
+
+              <tr>
+                <td><button class="digit" id="btn-seven">7</button></td>
+                <td><button class="digit" id="btn-eight">8</button></td>
+                <td><button class="digit" id="btn-nine">9</button></td>
+                <td><button id="btn-times" class="operators">*</button></td>
+              </tr>
+
+              <tr>
+                <td><button class="digit" id="btn-four">4</button></td>
+                <td><button class="digit" id="btn-five">5</button></td>
+                <td><button class="digit" id="btn-six">6</button></td>
+                <td><button id="btn-minus" class="operators">-</button></td>
+              </tr>
+              <tr>
+                <td><button class="digit" id="btn-one">1</button></td>
+                <td><button class="digit" id="btn-two">2</button></td>
+                <td><button class="digit" id="btn-three">3</button></td>
+                <td rowspan="2"><button class="digit" id="btn-equals">=</button></td>
+              </tr>
+              <tr>
+                <td><button class="digit" id="btn-zero">0</button></td>
+                <td><button id="btn-decimal" class="operators">.</button></td>
+                <td><button id="btn-plus" class="operators">+</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+
+</html>

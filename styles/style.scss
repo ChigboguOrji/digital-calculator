@@ -1,0 +1,128 @@
+@charset "utf-8";
+$base-color:#0060df;
+$base-color-text:white;
+$base-color-hover: lighten($base-color, 10%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+body {
+  background: adjust-color(white, $green:12);
+  color: $base-color;
+  width: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: $base-color;
+  color: $base-color-text;
+  padding: 10px;
+
+  .header-inner {
+    font-size: 80%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: $base-color-text;
+      text-decoration: none;
+
+      &.nav-link {
+        background: adjust-color(white, $green:12);
+        color: $base-color;
+        padding: 10px;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+.calculator {
+  width: 40%;
+  margin: 5em auto 0;
+
+  table {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    border: 1px solid $base-color-hover;
+    box-shadow: 0 0 0.3em 0.01em #999;
+
+    thead {
+      th {
+        font-size: 1.3em;
+        padding: 0.9em;
+      }
+    }
+
+    tbody {
+      padding-top: 1em;
+
+      td {
+
+        input {
+          width: 100%;
+          padding: 0.9em;
+          text-align: right;
+
+          &:read-only {
+            outline: 0;
+          }
+
+          &#processed-data {
+            border: 1px solid $base-color;
+            border-bottom: 0;
+            border-top-right-radius: 0.2em;
+            border-top-left-radius: 0.2em;
+            font-weight: 900;
+          }
+
+          &#unprocessed-data {
+            border: 1px solid $base-color;
+            border-top: 0;
+            border-bottom-right-radius: 0.2em;
+            border-bottom-left-radius: 0.2em;
+            margin-top: -3px;
+            letter-spacing: 5px;
+            font-weight: 700;
+          }
+        }
+
+        button {
+          width: 100%;
+          height: 3em;
+          font-weight: 600;
+          font-size: 1em;
+          border: 1px solid $base-color;
+          border-radius: 0.2em;
+          background: $base-color-text;
+
+          &:hover {
+            background: $base-color;
+            color: $base-color-text;
+          }
+
+          .operators {
+            font-weight: 800;
+          }
+
+          &#btn-equals {
+            height: 6.1em;
+            background: $base-color;
+            color: $base-color-text;
+          }
+        }
+      }
+    }
+  }
+}
